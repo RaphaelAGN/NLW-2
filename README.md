@@ -32,8 +32,20 @@ Alunos:
   * Horário, matéria e dia da semana
   * Possibilidade de entrar em contato com o professor
   
-# :construction: Em construção... :construction:
-* 
+:construction: Em construção... :construction: <br>
+* Versão web:
+  * Login, cadastro de conta e esquecer senha
+  * Mudanças layout cadastro de aulas e listagem de professores
+  * Edição de perfil
+  
+* Versão mobile:
+  * Login, cadastro de conta e esquecer senha
+  * Mudança layout cadastro de aulas, listagem de professores e de favoritos
+  * Edição de perfil
+  
+* Back-end:
+  * Criação de tabelas
+  * Ajuste baseado nas alteraçõs necessárias no mobile e na web
   
 <a name="pre-requisitos"></a>
 # Pré Requisitos
