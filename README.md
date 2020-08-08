@@ -70,14 +70,20 @@ Alunos:
 :bulb: Clonar repositório: `$ git clone https://github.com/RaphaelAGN/NLW-2.git`
 
 1. Back-end
-* Dentro da pasta server: `$ yarn start`
+* Dentro da pasta server: 
+  * `$ yarn install`
+  * `$ yarn start`
 
 2. Front-end
-* Dentro da pasta web: `$ yarn start`
+* Dentro da pasta web: 
+  * `$ yarn install`
+  * `$ yarn start`
 
 3. Mobile 
-* Dentro da pasta mobile: `$ yarn start`
-
+* Dentro da pasta mobile: 
+  * `$ yarn install`
+  * `$ yarn start`
+  
 <a name="contribution"></a>
 
 # :handshake: Contribuir
