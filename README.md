@@ -6,6 +6,7 @@
 <!--ts-->
    * [Sobre](#sobre)
    * [Funcionalidades](#funcionalidades)
+   * [Em construção] (#construction)
    * [Pré Requisitos](#pre-requisitos)
    * [Tecnologias](#tecnologias)
    * [Comandos de execução](#commands)
@@ -32,7 +33,9 @@ Alunos:
   * Horário, matéria e dia da semana
   * Possibilidade de entrar em contato com o professor
   
-:construction: Em construção... :construction: <br>
+ <a name="construction"></a>
+ <h1>:construction: Em construção... :construction: </h1> <br>
+
 * Versão web:
   * Login, cadastro de conta e esquecer senha
   * Mudanças layout cadastro de aulas e listagem de professores
