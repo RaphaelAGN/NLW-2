@@ -32,21 +32,28 @@ Alunos:
   * Horário, matéria e dia da semana
   * Possibilidade de entrar em contato com o professor
   
- <h1>:construction: Em construção... :construction: </h1> 
+ ## :construction: Funcionalidades em construção... :construction:  
+    
+:exclamation: Possíveis alterações na lista <br/>
 
 * Versão web:
-  * Login, cadastro de conta e esquecer senha
-  * Mudanças layout cadastro de aulas e listagem de professores
-  * Edição de perfil
+  - [x] Criação da tela de login
+  - [x] Estilização da tela login
+  - [ ] Estilização do form na tela de login
+  - [ ] Criação tela de cadastro 
+  - [ ] Estilização da tela de cadastro e do form
+  - [ ] Mudanças layout cadastro de aulas e listagem de professores
+  - [ ] Edição de perfil
   
 * Versão mobile:
-  * Login, cadastro de conta e esquecer senha
-  * Mudança layout cadastro de aulas, listagem de professores e de favoritos
-  * Edição de perfil
+  - [ ] Login, cadastro de conta e esquecer senha
+  - [ ] Mudança layout cadastro de aulas, listagem de professores e de favoritos
+  - [ ] Edição de perfil
   
 * Back-end:
-  * Criação de tabelas
-  * Ajuste baseado nas alteraçõs necessárias no mobile e na web
+  - [x] Criação tabela de contas
+  - [x] Criar hash nas senhas e armazenar a senha criptografada
+  - [ ] Ajuste baseado nas alteraçõs necessárias no mobile e na web
   
 <a name="pre-requisitos"></a>
 # Pré Requisitos
