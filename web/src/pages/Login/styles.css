@@ -1,0 +1,161 @@
+#page-login {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+
+#page-login-leftside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../../assets/images/success-background.svg");
+    background-size: contain;
+    background-position: center;
+    background-color: var(--color-primary);
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+
+
+.logo-container img {
+    height: 8rem;
+}
+
+.logo-container h2 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 4.6rem;
+    margin-top: 0.8rem;
+    color: var(--color-text-in-primary);
+    text-align: initial;
+    line-height: 1.3;
+}
+
+#page-login-rightside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50rem;
+    position: absolute;
+    background-color: var(--color-background);
+}
+
+#page-login-rightside form {
+    width: 50%;
+}
+
+#page-login-rightside fieldset{
+    border: 0;
+    padding: 0 2.4rem;
+}
+
+#page-login-rightside fieldset legend {
+    font: 700 2.4rem Archivo;
+    color: var(--color-text-title);
+    margin-bottom: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid var(--color-line-in-white);
+}
+
+#page-login-rightside fieldset button {
+    width: 100%;
+    height: 5.6rem;
+    background: var(--color-line-in-white);
+    color: var(--color-text-complement);
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    margin-top: 3.2rem;
+}
+
+#page-login-rightside fieldset button:hover {
+    background: var(--color-text-complement);
+    color: var(--color-line-in-white);
+}
+
+#form-login-footer-buttons {
+    display: inline-block;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#form-login-footer-buttons span {
+    color: var(--color-text-complement);
+    align-items: center;
+    margin-left: 0.8rem;
+    font-size: 1.6rem;
+}
+
+#form-login-footer-buttons label {
+    color: var(--color-text-complement);
+    align-items: center;
+    margin-left: 0.8rem;
+    font-size: 1.6rem;
+}
+
+
+#page-login-rightside footer {
+    padding: 4rem 2.4rem;
+    border-top: 1px solid var(--color-line-in-white);
+    margin-top: 6.4rem;
+}
+
+@media (min-width: 1100px) {
+
+    #page-login {
+        width: 100vw;
+        height: 100vh;
+    
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #page-login-leftside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../../assets/images/success-background.svg");
+        background-size: contain;
+        background-position: center;
+        background-color: var(--color-primary);
+        width: 55%;
+        height: 100%;
+        left: 0;
+    }
+
+    .logo-container img {
+        height: 10rem;
+    }
+
+    #page-login-rightside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+        background-color: var(--color-background);
+    }
+}
