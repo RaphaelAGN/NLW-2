@@ -23,35 +23,41 @@ function Login() {
                     <fieldset>
                         <legend>Fazer login</legend>
 
-                        <Input 
+                        <Input
                             name="email" 
                             label="" 
                             placeholder="E-mail"
                         />
+                        <p></p>
                         <Input 
                             name="password" 
                             label=""
                             placeholder="Senha"
                         />
-
-                        <div id="form-login-footer-buttons">
-                            <Input name="remember" label="Lembrar-me" type="checkbox"/>
-                            <span>Esqueci minha senha</span>
-                        </div>
-
-                        <button type="submit">Entrar</button>
                     
                     </fieldset>
+
+                    <div id="form-login-footer-buttons">              
+                        <label htmlFor="rememberMe">Lembre-me</label>
+                        <input name="remember" id="rememberMe" type="checkbox"/>
+                        <a>Esqueci minha senha</a>
+                    </div>
+
+                    <button type="submit">Entrar</button>
                 </form>
 
                 <footer>
-                    <p>
-                        Não tem conta? <br/>
-                        Cadastre-se
-                    </p>
+                    <div id="footer-signup">
+                        <span>
+                            Não tem conta? 
+                        </span>
+                        <a>
+                            Cadastre-se
+                        </a>
+                    </div>
                     <span className="total-connections">
                         É de graça <img src={purpleHeartIcon} alt="" />
-                        </span>
+                    </span>
                 </footer>
             </div>
         </div>
