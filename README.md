@@ -40,8 +40,10 @@ Alunos:
   - [x] Criação da tela de login
   - [x] Estilização da tela login
   - [ ] Estilização do form na tela de login
+  - [ ] Confirmação login
   - [ ] Criação tela de cadastro 
-  - [ ] Estilização da tela de cadastro e do form
+  - [ ] Estilização da tela de cadastro e de seu form
+  - [ ] Confirmação cadastro
   - [ ] Mudanças layout cadastro de aulas e listagem de professores
   - [ ] Edição de perfil
   
@@ -53,6 +55,7 @@ Alunos:
 * Back-end:
   - [x] Criação tabela de contas
   - [x] Criar hash nas senhas e armazenar a senha criptografada
+  - [ ] Autenticar login e cadastro
   - [ ] Ajuste baseado nas alteraçõs necessárias no mobile e na web
   
 <a name="pre-requisitos"></a>
