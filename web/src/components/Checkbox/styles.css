@@ -1,0 +1,24 @@
+.checkbox-block {
+    position: relative;
+    display: inline-block;
+}
+
+.checkbox-block label {
+    font: 400 1.6rem Archivo;
+    color: var(--color-text-complement);
+    padding: 2rem;
+}
+
+.checkbox-block input {
+    margin-left: 0.1rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+@media (min-width: 1100px) {
+    .checkbox-block label {
+        font: 400 1.6rem Archivo;
+        color: var(--color-text-complement);
+        padding: 3.5rem;
+    }
+}

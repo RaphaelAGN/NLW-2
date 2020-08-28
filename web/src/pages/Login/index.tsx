@@ -1,5 +1,6 @@
 import React from 'react';
 import Input from '../../components/Input';
+import Checkbox from '../../components/Checkbox';
 
 import logoImg from '../../assets/images/logo.svg'
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
@@ -34,30 +35,31 @@ function Login() {
                             label=""
                             placeholder="Senha"
                         />
-                    
-                    </fieldset>
 
-                    <div id="form-login-footer-buttons">              
-                        <label htmlFor="rememberMe">Lembre-me</label>
-                        <input name="remember" id="rememberMe" type="checkbox"/>
+                        <Checkbox 
+                            name="remember"
+                            label="Lembre-me"
+                        />
+                        
                         <a>Esqueci minha senha</a>
-                    </div>
 
-                    <button type="submit">Entrar</button>
+                        <button type="submit">Entrar</button> 
+                    </fieldset>
                 </form>
 
                 <footer>
                     <div id="footer-signup">
-                        <span>
-                            Não tem conta? 
-                        </span>
-                        <a>
-                            Cadastre-se
-                        </a>
+                        <div id="footer-first-line">
+                            <a>Não tem conta?</a>
+                            <span>
+                                É de graça <img src={purpleHeartIcon} alt="" />
+                            </span>
+                        </div>
+                        <div id="footer-second-line">
+                            <a>Cadastre-se</a>
+                        </div>
                     </div>
-                    <span className="total-connections">
-                        É de graça <img src={purpleHeartIcon} alt="" />
-                    </span>
+                    
                 </footer>
             </div>
         </div>
