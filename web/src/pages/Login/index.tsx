@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Input from '../../components/Input';
 import Checkbox from '../../components/Checkbox';
+import {Link} from 'react-router-dom';
 
 import logoImg from '../../assets/images/logo.svg'
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
+
 
 import './styles.css';
 
 
 function Login() {
+    //const [passwordShown, setPasswordShown] = useState(false);
+
+    /*function togglePasswordVisibility() {
+        setPasswordShown(passwordShown ? false : true);
+    }*/
+
     return (
         <div id="page-login">
             <div id="page-login-leftside">
@@ -25,15 +33,18 @@ function Login() {
                         <legend>Fazer login</legend>
 
                         <Input
+                            className="inputs"
                             name="email" 
                             label="" 
                             placeholder="E-mail"
                         />
                         <p></p>
                         <Input 
+                            className="inputs"
                             name="password" 
                             label=""
                             placeholder="Senha"
+                            type="password"
                         />
 
                         <Checkbox 
@@ -41,7 +52,7 @@ function Login() {
                             label="Lembre-me"
                         />
                         
-                        <a>Esqueci minha senha</a>
+                        <Link to="" id="forgot-pass">Esqueci minha senha</Link>
 
                         <button type="submit">Entrar</button> 
                     </fieldset>
@@ -56,7 +67,7 @@ function Login() {
                             </span>
                         </div>
                         <div id="footer-second-line">
-                            <a>Cadastre-se</a>
+                            <Link to="/signup-page" className="signup-page">Cadastre-se</Link>
                         </div>
                     </div>
                     

@@ -71,6 +71,7 @@ function TeacherList() {
                         ]}
                     />
                    <Input 
+                        className="inputs"
                         type="time" 
                         name="time" 
                         label="Hora"

@@ -1,4 +1,4 @@
-#page-login {
+#page-signup {
     width: 100vw;
     height: 100vh;
 
@@ -7,8 +7,7 @@
     align-items: stretch;
 }
 
-
-#page-login-leftside {
+#page-signup-rightside {
     display: flex;
     z-index: 100;
     align-items: center;
@@ -38,7 +37,7 @@
     line-height: 1.3;
 }
 
-#page-login-rightside {
+#page-signup-leftside {
     display: flex;
     height: 50rem;
     align-items: center;
@@ -49,24 +48,35 @@
     background-color: var(--color-background);
 }
 
-#page-login-rightside fieldset input:last-child {
+#page-signup-leftside #back-icon a {
+    display: flex;
+    position: absolute;
+    top: 1.6rem;
+    left: 6.3rem;
+}
+
+#page-signup-leftside #back-icon a:hover {
+    opacity: 0.6;  
+}
+
+#page-signup-leftside fieldset input:last-child {
     margin-top: 0;
 }
 
-#page-login-rightside form {
+#page-signup-leftside form {
     margin-top: 8rem;
     width: 40rem;
     display: flex;
     justify-content: center;
 }
 
-#page-login-rightside fieldset{
+#page-signup-leftside fieldset{
     border: 0;
     margin-left: 2rem;
     justify-content: center;
 }
 
-#page-login-rightside fieldset legend {
+#page-signup-leftside fieldset legend {
     font: 700 2.4rem Archivo;
     color: var(--color-text-title);
     margin-bottom: 2.4rem;
@@ -77,16 +87,25 @@
     border-bottom: 1px solid var(--color-line-in-white);
 }
 
-#page-login-rightside fieldset input[type=text] {
+#page-signup-leftside fieldset #signup-text {
+    font: 400 1.8rem Archivo;
+    color: var(--color-text-complement);
+}
+
+#page-signup-leftside .signup-titles{
+    margin-bottom: 3rem;
+}
+
+#page-signup-leftside fieldset input[type=text] {
     width: 30rem;
     height: 5rem;
 }
 
-#page-login-rightside fieldset input[type=checkbox] {
+#page-signup-leftside fieldset input[type=checkbox] {
     margin-top: 3rem;
 }
 
-#page-login-rightside fieldset #forgot-pass {
+#page-signup-leftside fieldset .forgot-pass {
     font: 400 1.6rem Archivo;
     color: var(--color-text-complement);
     float: right;
@@ -94,7 +113,7 @@
     text-decoration: none;
 }
 
-#page-login-rightside fieldset button {
+#page-signup-leftside fieldset button {
     width: 100%;
     height: 5rem;
     margin-top: 3rem;
@@ -110,12 +129,12 @@
     transition: background-color 0.2s;
 }
 
-#page-login-rightside fieldset button:hover {
+#page-signup-leftside fieldset button:hover {
     background: var(--color-secondary);
     color: var(--color-line-in-white);
 }
 
-#page-login-rightside footer {
+#page-signup-leftside footer {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -123,25 +142,26 @@
     margin-top: 8rem;
 }
 
-#page-login-rightside footer #footer-first-line a {
+#page-signup-leftside footer #footer-first-line a {
     font: 400 1.7rem Archivo;
     color: var(--color-text-complement);
 }
 
-#page-login-rightside footer span {
+#page-signup-leftside footer span {
     margin-left: 6rem;
     font: 400 1.7rem Archivo;
     color: var(--color-text-complement);
 }
 
-#page-login-rightside footer #footer-second-line .signup-page {
+#page-signup-leftside footer #footer-second-line .signup-page {
     font: 700 1.7rem Archivo;
     color: var(--color-primary-darker);
     text-decoration: underline;
 }
 
 @media (min-width: 1100px) {
-    #page-login {
+
+    #page-signup {
         width: 100vw;
         height: 100vh;
     
@@ -151,8 +171,8 @@
         flex-direction: column;
         flex-wrap: wrap;
     }
-    
-    #page-login-leftside {
+
+    #page-signup-rightside {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -162,36 +182,47 @@
         background-color: var(--color-primary);
         width: 45%;
         height: 100%;
-        left: 0;
+        right: 0;
     }
 
     .logo-container {
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
     }
 
     .logo-container img {
         height: 10rem;
     }
 
-    #page-login-rightside {
+    #page-signup-leftside {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 55%;
         height: 100%;
-        right: 0;
+        left: 0;
         bottom: 0;
         background-color: var(--color-background);
     }
 
-    #page-login-rightside form {
-        justify-content: center;
-        align-content: center;
-        margin-top: 20rem;
+    #page-signup-leftside #back-icon a {
+        display: grid;
+        top: 3.2rem;
+        left: 30.5rem;
     }
 
-    #page-login-rightside fieldset legend {
-        font: 700 3rem Archivo;
+    #page-signup-leftside #back-icon a:hover {
+        opacity: 0.6;  
+    }
+
+    #page-signup-leftside form {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 5rem;
+    }
+
+    #page-signup-leftside fieldset legend {
+        font: 700 5rem Archivo;
         color: var(--color-text-title);
         margin-bottom: 3rem;
         display: flex;
@@ -201,27 +232,25 @@
         border-bottom: 1px solid var(--color-line-in-white);
     }
 
-    #page-login-rightside fieldset input:focus-within::after {
-        width: 2px;
-        height: calc(100% - 2.3rem);;
-        content: '';
-        background: var(--color-primary-light);
-        position: absolute;
-        left: 0rem;
-        right: 1.6rem;
-        bottom: 1rem;
+    #page-signup-leftside fieldset #signup-text {
+        font: 400 1.9rem Archivo;
+        color: var(--color-text-complement);
     }
 
-    #page-login-rightside fieldset input[type=text] {
+    #page-signup-leftside .signup-titles{
+        margin-bottom: 3rem;
+    }
+
+    #page-signup-leftside fieldset input[type=text] {
         width: 35rem;
         height: 6rem;
     }
 
-    #page-login-rightside fieldset input[type=checkbox] {
+    #page-signup-leftside fieldset input[type=checkbox] {
         margin-top: 5rem;
     }
     
-    #page-login-rightside fieldset #forgot-pass {
+    #page-signup-leftside fieldset .forgot-pass {
         font: 400 1.6rem Archivo;
         color: var(--color-text-complement);
         float: right;
@@ -229,7 +258,7 @@
         text-decoration: none;
     }
     
-    #page-login-rightside fieldset button {
+    #page-signup-leftside fieldset button {
         width: 100%;
         height: 5.6rem;
         margin-top: 4rem;
@@ -246,25 +275,25 @@
         transition: background-color 0.2s;
     }
 
-    #page-login-rightside footer {
+    #page-signup-leftside footer {
         width: 50%;
         justify-content: center;
         margin-left: 2rem;
-        margin-top: 16rem;
+        margin-top: 20rem;
     }
 
-    #page-login-rightside footer #footer-first-line a {
+    #page-signup-leftside footer #footer-first-line a {
         font: 400 1.7rem Archivo;
         color: var(--color-text-complement);
     }
     
-    #page-login-rightside footer #footer-first-line span {
+    #page-signup-leftside footer #footer-first-line span {
         font: 400 1.7rem Archivo;
         color: var(--color-text-complement);
         margin-left: 9rem;
     }
 
-    #page-login-rightside footer #footer-second-line .signup-page {
+    #page-signup-leftside footer #footer-second-line .signup-page {
         margin-top: 4rem;
         font: 700 1.8rem Archivo;
         color: var(--color-primary-darker);

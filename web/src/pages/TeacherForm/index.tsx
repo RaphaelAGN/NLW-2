@@ -79,18 +79,21 @@ function TeacherForm() {
                         <legend>Seus dados</legend>
 
                         <Input 
+                            className="inputs"
                             name="name" 
                             label="Nome completo" 
                             value={name} 
                             onChange={(e) => { setName(e.target.value) }}
                         />
                         <Input 
+                            className="inputs"
                             name="avatar" 
                             label="Avatar"
                             value={avatar} 
                             onChange={(e) => { setAvatar(e.target.value) }}
                         />
                         <Input 
+                            className="inputs"
                             name="whatsapp" 
                             label="Whatsapp"
                             value={whatsapp} 
@@ -130,6 +133,7 @@ function TeacherForm() {
                         />
 
                         <Input 
+                            className="inputs"
                             name="cost" 
                             label="Custo da sua hora por aula"
                             value={cost}
@@ -164,6 +168,7 @@ function TeacherForm() {
                                         ]}
                                     />
                                     <Input 
+                                        className="inputs"
                                         name="from" 
                                         label="Das" 
                                         value={scheduleItem.from}
@@ -171,6 +176,7 @@ function TeacherForm() {
                                         onChange={e => setScheduleItemValue(index, 'from', e.target.value)}
                                     />
                                     <Input 
+                                        className="inputs"
                                         name="to" 
                                         label="Até" 
                                         value={scheduleItem.to}
