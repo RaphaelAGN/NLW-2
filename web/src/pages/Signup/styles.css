@@ -205,10 +205,9 @@
     }
 
     #page-signup-leftside #back-icon a {
-        display: flex;
-        position: absolute;
+        display: grid;
         top: 3.2rem;
-        left: 20rem;
+        left: 30.5rem;
     }
 
     #page-signup-leftside #back-icon a:hover {
@@ -216,6 +215,7 @@
     }
 
     #page-signup-leftside form {
+        display: flex;
         justify-content: center;
         align-content: center;
         margin-top: 5rem;
