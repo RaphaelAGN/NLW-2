@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Input from '../../components/Input';
 import PageHeader from '../../components/PageHeader';
 
@@ -11,7 +11,10 @@ import './styles.css';
 
 function Signup() {
 
-    
+    const [name, setName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     return (
         <div id="page-signup">   
             <div id="page-signup-leftside">
@@ -36,6 +39,8 @@ function Signup() {
                                 name="name" 
                                 label="" 
                                 placeholder="Nome"
+                                value={name}
+                                onChange={(e) => { setName(e.target.value) }}
                             />
                             <p></p>
                             <Input
@@ -43,6 +48,8 @@ function Signup() {
                                 name="lastname" 
                                 label="" 
                                 placeholder="Sobrenome"
+                                value={lastName}
+                                onChange={(e) => { setLastName(e.target.value) }}
                             />
                             <p></p>
                             <Input
@@ -50,6 +57,8 @@ function Signup() {
                                 name="email" 
                                 label="" 
                                 placeholder="E-mail"
+                                value={email}
+                                onChange={(e) => { setEmail(e.target.value) }}
                             />
                             <p></p>
                             <Input 
@@ -58,6 +67,8 @@ function Signup() {
                                 label=""
                                 placeholder="Senha"
                                 type="password"
+                                value={password}
+                                onChange={(e) => { setPassword(e.target.value) }}
                             />
                         </div>
 
