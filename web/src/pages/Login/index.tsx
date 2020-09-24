@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { FormEvent, useState } from 'react';
 import Input from '../../components/Input';
 import Checkbox from '../../components/Checkbox';
 import {Link} from 'react-router-dom';
@@ -17,6 +17,10 @@ function Login() {
         setPasswordShown(passwordShown ? false : true);
     }*/
 
+    function handleSubmit(e: FormEvent) {
+        e.preventDefault();
+    }
+
     return (
         <div id="page-login">
             <div id="page-login-leftside">
@@ -28,7 +32,7 @@ function Login() {
             </div>
 
             <div id="page-login-rightside">
-                <form>
+                <form onSubmit={handleSubmit}>
                     <fieldset>
                         <legend>Fazer login</legend>
 

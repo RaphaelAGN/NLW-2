@@ -10,6 +10,8 @@ import logoImg from '../../assets/images/logo.svg'
 import './styles.css';
 
 function Signup() {
+
+    
     return (
         <div id="page-signup">   
             <div id="page-signup-leftside">
@@ -18,7 +20,7 @@ function Signup() {
                         <img src={backIcon} alt="Voltar" />
                     </Link>  
                 </div>
-                <form>
+                <form onSubmit={handleCreateUser}>
                     <fieldset>
                         <div className="signup-titles">
                             <legend>Cadastro</legend>
