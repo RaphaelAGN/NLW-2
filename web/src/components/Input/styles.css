@@ -22,7 +22,7 @@
     font: 400 1.6rem Archivo;
 }
 
-/*.input-block:focus-within::after {
+.input-block:focus-within::after {
     width: calc(100% - 3.2rem);
     height: 2px;
     content: '';
@@ -33,6 +33,7 @@
     bottom: 0;
 }
 
+/*
 .input-block:focus-within::after {
     width: 2px;
     height: calc(100% - 2.3rem);;

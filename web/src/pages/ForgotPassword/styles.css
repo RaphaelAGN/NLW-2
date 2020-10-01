@@ -1,4 +1,4 @@
-#page-signup {
+#page-forgot-password {
     width: 100vw;
     height: 100vh;
 
@@ -7,7 +7,7 @@
     align-items: stretch;
 }
 
-#page-signup-rightside {
+#page-forgot-password-rightside {
     display: flex;
     z-index: 100;
     align-items: center;
@@ -37,7 +37,7 @@
     line-height: 1.3;
 }
 
-#page-signup-leftside {
+#page-forgot-password-leftside {
     display: flex;
     height: 50rem;
     align-items: center;
@@ -48,35 +48,35 @@
     background-color: var(--color-background);
 }
 
-#page-signup-leftside #back-icon a {
+#page-forgot-password-leftside #back-icon a {
     display: flex;
     position: absolute;
     top: 1.6rem;
     left: 6.3rem;
 }
 
-#page-signup-leftside #back-icon a:hover {
+#page-forgot-password-leftside #back-icon a:hover {
     opacity: 0.6;  
 }
 
-#page-signup-leftside fieldset input:last-child {
+#page-forgot-password-leftside fieldset input:last-child {
     margin-top: 0;
 }
 
-#page-signup-leftside form {
+#page-forgot-password-leftside form {
     margin-top: 8rem;
     width: 40rem;
     display: flex;
     justify-content: center;
 }
 
-#page-signup-leftside fieldset{
+#page-forgot-password-leftside fieldset{
     border: 0;
     margin-left: 2rem;
     justify-content: center;
 }
 
-#page-signup-leftside fieldset legend {
+#page-forgot-password-leftside fieldset legend {
     font: 700 2.4rem Archivo;
     color: var(--color-text-title);
     margin-bottom: 2.4rem;
@@ -87,33 +87,25 @@
     border-bottom: 1px solid var(--color-line-in-white);
 }
 
-#page-signup-leftside fieldset #signup-text {
+#page-forgot-password-leftside fieldset #forgot-password-text {
     font: 400 1.8rem Archivo;
     color: var(--color-text-complement);
 }
 
-#page-signup-leftside .signup-titles{
+#page-forgot-password-leftside .forgot-password-titles{
     margin-bottom: 3rem;
 }
 
-#page-signup-leftside fieldset input[type=text] {
+#page-forgot-password-leftside fieldset input[type=text] {
     width: 30rem;
     height: 5rem;
 }
 
-#page-signup-leftside fieldset input[type=checkbox] {
+#page-forgot-password-leftside fieldset input[type=checkbox] {
     margin-top: 3rem;
 }
 
-#page-signup-leftside fieldset .forgot-pass {
-    font: 400 1.6rem Archivo;
-    color: var(--color-text-complement);
-    float: right;
-    margin-top: 3rem;
-    text-decoration: none;
-}
-
-#page-signup-leftside fieldset button {
+#page-forgot-password-leftside fieldset button {
     width: 100%;
     height: 5rem;
     margin-top: 3rem;
@@ -130,39 +122,14 @@
     transition: background-color 0.2s;
 }
 
-#page-signup-leftside fieldset button:hover {
+#page-forgot-password-leftside fieldset button:hover {
     background: var(--color-secondary);
     color: var(--color-line-in-white);
 }
 
-#page-signup-leftside footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-left: 1rem;
-    margin-top: 8rem;
-}
-
-#page-signup-leftside footer #footer-first-line a {
-    font: 400 1.7rem Archivo;
-    color: var(--color-text-complement);
-}
-
-#page-signup-leftside footer span {
-    margin-left: 6rem;
-    font: 400 1.7rem Archivo;
-    color: var(--color-text-complement);
-}
-
-#page-signup-leftside footer #footer-second-line .signup-page {
-    font: 700 1.7rem Archivo;
-    color: var(--color-primary-darker);
-    text-decoration: underline;
-}
-
 @media (min-width: 1100px) {
 
-    #page-signup {
+    #page-forgot-password {
         width: 100vw;
         height: 100vh;
     
@@ -173,7 +140,7 @@
         flex-wrap: wrap;
     }
 
-    #page-signup-rightside {
+    #page-forgot-password-rightside {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -194,7 +161,7 @@
         height: 10rem;
     }
 
-    #page-signup-leftside {
+    #page-forgot-password-leftside {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -205,24 +172,24 @@
         background-color: var(--color-background);
     }
 
-    #page-signup-leftside #back-icon a {
+    #page-forgot-password-leftside #back-icon a {
         display: grid;
         top: 3.2rem;
         left: 30.5rem;
     }
 
-    #page-signup-leftside #back-icon a:hover {
+    #page-forgot-password-leftside #back-icon a:hover {
         opacity: 0.6;  
     }
 
-    #page-signup-leftside form {
+    #page-forgot-password-leftside form {
         display: flex;
         justify-content: center;
         align-content: center;
         margin-top: 5rem;
     }
 
-    #page-signup-leftside fieldset legend {
+    #page-forgot-password-leftside fieldset legend {
         font: 700 5rem Archivo;
         color: var(--color-text-title);
         margin-bottom: 3rem;
@@ -233,33 +200,21 @@
         border-bottom: 1px solid var(--color-line-in-white);
     }
 
-    #page-signup-leftside fieldset #signup-text {
+    #page-forgot-password-leftside fieldset #forgot-password-text {
         font: 400 1.9rem Archivo;
         color: var(--color-text-complement);
     }
 
-    #page-signup-leftside .signup-titles{
+    #page-forgot-password-leftside .forgot-password-titles{
         margin-bottom: 3rem;
     }
 
-    #page-signup-leftside fieldset input[type=text] {
-        width: 35rem;
+    #page-forgot-password-leftside fieldset input[type=text] {
+        width: 40rem;
         height: 6rem;
     }
-
-    #page-signup-leftside fieldset input[type=checkbox] {
-        margin-top: 5rem;
-    }
     
-    #page-signup-leftside fieldset .forgot-pass {
-        font: 400 1.6rem Archivo;
-        color: var(--color-text-complement);
-        float: right;
-        margin-top: 5rem;
-        text-decoration: none;
-    }
-    
-    #page-signup-leftside fieldset button {
+    #page-forgot-password-leftside fieldset button {
         width: 100%;
         height: 5.6rem;
         margin-top: 4rem;
@@ -274,30 +229,5 @@
         justify-content: center;
         text-decoration: none;
         transition: background-color 0.2s;
-    }
-
-    #page-signup-leftside footer {
-        width: 50%;
-        justify-content: center;
-        margin-left: 2rem;
-        margin-top: 20rem;
-    }
-
-    #page-signup-leftside footer #footer-first-line a {
-        font: 400 1.7rem Archivo;
-        color: var(--color-text-complement);
-    }
-    
-    #page-signup-leftside footer #footer-first-line span {
-        font: 400 1.7rem Archivo;
-        color: var(--color-text-complement);
-        margin-left: 9rem;
-    }
-
-    #page-signup-leftside footer #footer-second-line .signup-page {
-        margin-top: 4rem;
-        font: 700 1.8rem Archivo;
-        color: var(--color-primary-darker);
-        text-decoration: underline;
     }
 }

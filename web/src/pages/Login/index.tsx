@@ -56,7 +56,7 @@ function Login() {
                             label="Lembre-me"
                         />
                         
-                        <Link to="" id="forgot-pass">Esqueci minha senha</Link>
+                        <Link to="/forgot-password" id="forgot-pass">Esqueci minha senha</Link>
 
                         <button type="submit">Entrar</button> 
                     </fieldset>
