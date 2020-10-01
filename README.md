@@ -39,7 +39,7 @@ Alunos:
 * Versão web:
   - [x] Criação da tela de login
   - [x] Estilização da tela login
-  - [x] Estilização do form na tela de login
+  - [ ] Estilização do form na tela de login
   - [ ] Confirmação login
   - [x] Criação tela de cadastro 
   - [x] Estilização da tela de cadastro e de seu form
