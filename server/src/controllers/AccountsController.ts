@@ -1,12 +1,12 @@
 import { Request, Response } from 'express';
 import db from '../database/connection';
 
-export default class UsersController {
+export default class AccountsController {
     
     async create(request: Request, response: Response) {
         let {
             name,
-            lastname,
+            lastName,
             email,
             password
         } = request.body;
@@ -26,7 +26,7 @@ export default class UsersController {
                 } else {
                     await trx('accounts').insert({
                         name,
-                        lastname,
+                        lastName,
                         email,
                         password: hash,
                     });
