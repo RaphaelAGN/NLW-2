@@ -21,7 +21,6 @@ function Signup() {
     const [password, setPassword] = useState('');
     function handleCreateUser(e: FormEvent) {
         e.preventDefault();
-
         api.post('accounts', {
             name,
             lastName,
