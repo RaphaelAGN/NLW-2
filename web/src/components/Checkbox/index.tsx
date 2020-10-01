@@ -9,10 +9,12 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 const Checkbox: React.FC<InputProps> = ( {name, label, ...rest} ) => {
     return (
         <div className="checkbox-block">
-            <input type='checkbox' id={name} {...rest} />
-            <label htmlFor={name}>{label}</label>
+            <input className="checkbox" type="checkbox" id={name} {...rest}/>
+            <label className="label-checkbox" htmlFor={name}>{label}</label>
         </div>
     );
 }
 
 export default Checkbox;
+
+//<input className="checkbox" type='checkbox' id={name} {...rest} />
