@@ -1,7 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, FormEvent} from 'react';
 import Input from '../../components/Input';
 import PageHeader from '../../components/PageHeader';
 
+import api from '../../services/api';
+
+import { useHistory } from 'react-router-dom';
 import {Link} from 'react-router-dom';
 
 import backIcon from '../../assets/images/icons/back.svg';
@@ -10,11 +13,27 @@ import logoImg from '../../assets/images/logo.svg'
 import './styles.css';
 
 function Signup() {
+    const history = useHistory();
 
     const [name, setName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    function handleCreateUser(e: FormEvent) {
+        e.preventDefault();
+
+        api.post('accounts', {
+            name,
+            lastName,
+            email,
+            password
+        }).then(() => {
+            alert("Cadastro realizado com sucesso!");
+            history.push('/');
+        }).catch(() => {
+            alert("Erro no cadastro");
+        })
+    }
     return (
         <div id="page-signup">   
             <div id="page-signup-leftside">
