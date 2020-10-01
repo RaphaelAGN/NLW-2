@@ -39,11 +39,11 @@ Alunos:
 * Versão web:
   - [x] Criação da tela de login
   - [x] Estilização da tela login
-  - [ ] Estilização do form na tela de login
+  - [x] Estilização do form na tela de login
   - [ ] Confirmação login
-  - [ ] Criação tela de cadastro 
-  - [ ] Estilização da tela de cadastro e de seu form
-  - [ ] Confirmação cadastro
+  - [x] Criação tela de cadastro 
+  - [x] Estilização da tela de cadastro e de seu form
+  - [x] Confirmação cadastro
   - [ ] Mudanças layout cadastro de aulas e listagem de professores
   - [ ] Edição de perfil
   
