@@ -1,6 +1,5 @@
 import React, {useState, FormEvent} from 'react';
 import Input from '../../components/Input';
-import PageHeader from '../../components/PageHeader';
 
 import api from '../../services/api';
 
@@ -13,12 +12,9 @@ import logoImg from '../../assets/images/logo.svg'
 import './styles.css';
 
 function ForgotPassword() {
-    const history = useHistory();
+    //const history = useHistory();
 
-    const [name, setName] = useState('');
-    const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
     function handleForgotPassword(e: FormEvent) {
         e.preventDefault();
     }
@@ -32,31 +28,13 @@ function ForgotPassword() {
                 </div>
                 <form onSubmit={handleForgotPassword}>
                     <fieldset>
-                        <div className="signup-titles">
+                        <div className="forgot-password-titles">
                             <legend>Eita, esqueceu sua senha?</legend>
                             
-                            <a id="signup-text"> Não esquenta, vamos dar um jeito nisso. </a>
+                            <a id="forgot-password-text"> Não esquenta, vamos dar um jeito nisso. </a>
                         </div>
 
-                        <div className="signup-inputs">
-                            <Input
-                                className="inputs"
-                                name="name" 
-                                label="" 
-                                placeholder="Nome"
-                                value={name}
-                                onChange={(e) => { setName(e.target.value) }}
-                            />
-                            <p></p>
-                            <Input
-                                className="inputs"
-                                name="lastname" 
-                                label="" 
-                                placeholder="Sobrenome"
-                                value={lastName}
-                                onChange={(e) => { setLastName(e.target.value) }}
-                            />
-                            <p></p>
+                        <div className="forgot-password-input">
                             <Input
                                 className="inputs"
                                 name="email" 
@@ -65,24 +43,14 @@ function ForgotPassword() {
                                 value={email}
                                 onChange={(e) => { setEmail(e.target.value) }}
                             />
-                            <p></p>
-                            <Input 
-                                className="inputs"
-                                name="password" 
-                                label=""
-                                placeholder="Senha"
-                                type="password"
-                                value={password}
-                                onChange={(e) => { setPassword(e.target.value) }}
-                            />
                         </div>
 
-                        <button type="submit">Concluir cadastro</button> 
+                        <button type="submit">Enviar</button> 
                     </fieldset>
                 </form>
             </div>
 
-            <div id="page-signup-rightside">
+            <div id="page-forgot-password-rightside">
                 <div className="logo-container">
                     <img src={logoImg} alt="Proffy" />
                     <h2>Sua plataforma de 

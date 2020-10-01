@@ -1,6 +1,5 @@
 import React, {useState, FormEvent} from 'react';
 import Input from '../../components/Input';
-import PageHeader from '../../components/PageHeader';
 
 import api from '../../services/api';
 
